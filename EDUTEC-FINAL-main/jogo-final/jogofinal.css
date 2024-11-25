@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Roboto Slab, serif;
+}
+
+body {
+    background-image: url(../imagens/pexels-magda-ehlers-pexels-2832772.jpg) ;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.principal {
+    width: 100%;
+    max-width: 1366px; 
+    margin: 0 auto; 
+}
+
+h1 {
+    display: flex;
+    font-size: 6.3rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8.6rem;
+    text-shadow: 0.125rem 0.125rem 0.313rem rgba(0, 0, 0, 0.5);  
+}
+
+.botao {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.imgbot {
+    height: 9.8rem;
+}
+
+.help {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#botao-ajuda {
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.logo-site {
+    position: fixed;
+    top: 0; 
+    margin-left: 6.6rem; 
+    width: 5rem; 
+    height: auto; 
+    z-index: 1000; 
+    left: 0.2rem;
+}
+
+.seta {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 6.2rem; 
+    height: auto; 
+    z-index: 1000; 
+    padding: 0 0.625rem; 
+    margin: 0.3125rem; 
+}
+
+@media (min-width: 1920px) {
+
+    .principal {
+        width: 100%;
+        max-width: 1920px; /* expande até 1920px */
+    }
+
+    h1 {
+        display: flex;
+        font-size: 9rem;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        margin-top: 16rem;
+        text-shadow: 0.125rem 0.125rem 0.313rem rgba(0, 0, 0, 0.5);  
+    }
+
+    .botao {
+        display: flex;
+        margin-top: 5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease
+    }
+
+    .botao:hover {
+        transform: scale(1.05);
+    }
+    
+    .imgbot {
+        height: 12rem;
+    }
+
+    .help {
+        position: fixed;
+        bottom: 0.5rem;
+        right: 0;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    #botao-ajuda {
+        width: 6rem;
+        height: 6rem;
+    }
+     
+    .logo-site {
+        position: fixed;
+        top: 0; 
+        margin-left: 9.6rem; 
+        width: 8.5625rem; 
+        height: auto; 
+        z-index: 1000; 
+    }
+
+    .seta {
+        position: fixed;
+        top: 0; 
+        left: 0; 
+        width: 8.5625rem; 
+        height: auto; 
+        z-index: 1000; 
+        padding: 0 0.625rem; 
+        margin: 0.3125rem; 
+    }
+}

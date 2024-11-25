@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body{
+    max-width: 1366px;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+}
+
+.imagem-fundo {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.text-principal .oceantext {                /* TEXTO DO OCEAN */  
+    font-family: "Roboto Slab", serif, bold;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    left: 18%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem; 
+    font-weight: 600;
+
+}
+
+.text-principal .lifetext {          /* TEXTO DO LIFE */            
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, 30%);
+    font-size: 6rem; 
+    
+}
+
+.text-principal #linha-home {
+    font-style: normal;
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    transform: translate(-50%, 30%);
+    width: 48rem; 
+}
+
+#botao-vetor {
+    margin-bottom: 1.25rem;  
+    border: none;    
+    outline: none;   
+    background: none; 
+    padding: 0;      
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.vetor_seta {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    z-index: 1;
+    position: relative;
+    height: 80vh;
+    padding: 6rem; 
+    margin-top: -300rem;
+}
+
+#botao-vetor {
+    position: absolute;
+    left: 50%;          
+    transform: translateX(-50%);        
+    border: none;    
+    outline: none;   
+    background: none; 
+    padding: 0;
+    cursor: pointer;
+}
+
+#botao-vetor img {
+    width: 4rem; 
+    height: 3rem; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 100;
+}
+
+.menu a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    font-family: "Barlow";
+    letter-spacing: 1px;
+    padding: 6px 15px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.menu a:hover,
+a.active {
+    color: #333;
+    background: #d4d5ff;
+}
+
+header .logo-site {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 6.5625rem; 
+    height: auto; 
+    z-index: 1000; 
+    padding: 0 0.625rem; 
+    margin: 0.3125rem; 
+} 
+
+
+.animaismenu {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto Slab", serif, medium;
+    transition: color 0.6s ease-in-out;
+}
+
+.animaismenu:hover {
+    color: rgb(32, 22, 170);
+}
+
+.sobremenu {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto Slab", serif, medium;
+    transition: color 0.6s ease-in-out;
+    word-spacing: 0.125rem; 
+}
+
+.sobremenu:hover {
+    color: rgb(32, 22, 170);
+}
+
+.gamemenu {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto Slab", serif, medium;
+    transition: color 0.6s ease-in-out;
+}
+
+.gamemenu:hover {
+    color: rgb(32, 22, 170);
+}
+
+.poluicaomenu {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto Slab", serif, medium;
+    transition: color 0.3s ease;
+}
+
+.poluicaomenu:hover {
+    color: rgb(32, 22, 170);
+}
+
+#imagem img {
+    cursor: pointer;   
+}
+
+#imagem-home {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.help {
+    position: fixed;
+    bottom: 0.5rem; 
+    right: 0.5rem; 
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.help .help-text {
+    visibility: hidden;
+    width: 120px;
+    transform: translateY(-150px);
+    right: 7%;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: "Roboto slab", serif;
+}
+
+.help:hover .help-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+#botao-ajuda {
+    width: 4rem; 
+    height: 4rem;
+    transition: transform 0.6s ease;
+}
+
+.help:hover #botao-ajuda {
+    transform: scale(1.3);
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+    
+    width: 100%;
+}
+
+.cabecalho nav {
+    font-size: 2.1rem; 
+    text-decoration: none;
+    word-spacing: 1.875rem; 
+    gap: 10rem; 
+    top: 0;
+    left: 3.125rem; 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 0.625rem 18.75rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.9); 
+    z-index: 1000;
+    line-height: 2.3;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.menu a {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: "Roboto Slab";
+    letter-spacing: 1px;
+    padding: 6px 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.menu a:hover,
+a.active {
+    color: #333;
+    background: #fff;
+}
+
+.logo-site {
+    position: fixed;
+    top: 0.6rem;
+    left: 1rem; 
+    width: 6rem; 
+    height: auto; 
+    z-index: 1000; 
+    padding: 0 0.625rem; 
+    margin: 0.3125rem; 
+}
+
+.logo-site {
+    cursor: pointer;
+    margin-right: 6rem;
+}
+
+.seta{
+    margin-top: 20rem;
+    z-index: 10000;
+}
